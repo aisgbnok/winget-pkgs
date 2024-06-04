@@ -33,12 +33,12 @@ winget validate --manifest <path-to-manifest>
 winget install --manifest <path-to-manifest>
 ```
 
-For more details, see ["Submit packages to Windows Package Manager"](https://docs.microsoft.com/windows/package-manager/package) at Microsoft Docs.
+For more details, see [Submit packages to Windows Package Manager](https://learn.microsoft.com/en-us/windows/package-manager/package/) at Microsoft Docs.
 
 ### In Windows Sandbox
 
 
-You can use the [Sandbox Test](../Tools/SandboxTest.ps1) PowerShell script for testing a manifest installation in [Windows Sandbox](https://docs.microsoft.com/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview). The manifest will be also validated.
+You can use the [Sandbox Test](../Tools/SandboxTest.ps1) PowerShell script for testing a manifest installation in [Windows Sandbox](https://learn.microsoft.com/en-us/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview). The manifest will be also validated.
 
 Just provide the path to manifest as parameter:
 
@@ -68,10 +68,10 @@ manifests\<first lower case letter of publisher>\<publisher>\<package>\<version>
 ```
 ### Validation Process
 
-Your PR will go through a validation process. The core team or the Microsoft bot (BOT) will use  [labels](https://docs.microsoft.com/windows/package-manager/package/winget-validation#pull-request-labels)  to assist during the process. In case of a failure, the BOT will suggest the problem with the submission and assign the PR back to you.
+Your PR will go through a validation process. The core team or the Microsoft bot (BOT) will use [labels](https://learn.microsoft.com/en-us/windows/package-manager/package/repository#pull-request-labels) to assist during the process. In case of a failure, the BOT will suggest the problem with the submission and assign the PR back to you.
 
 ### Respond to PR feedback
 
 If your PR has been assigned to you, a timer will be triggered. You will have 7 days to resolve the issue, or the BOT will automatically close the PR.
 
-Submissions to the repository are reviewed by Windows Package Manager administrators and/or community moderators. To help identify these individuals, we have provided a  [Public Service Announcement](https://github.com/microsoft/winget-pkgs/issues/15674).
+Submissions to the repository are reviewed by Windows Package Manager administrators and/or community moderators. To help identify these individuals, we have provided a [Public Service Announcement](https://github.com/microsoft/winget-pkgs/issues/15674).

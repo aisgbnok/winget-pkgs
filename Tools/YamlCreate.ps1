@@ -1353,7 +1353,7 @@ Function Read-InstallerEntry {
   do {
     Write-Host -ForegroundColor 'Red' $script:_returnValue.ErrorString()
     Write-Host -ForegroundColor 'Yellow' -Object '[Optional] Enter the installer locale. For example: en-US, en-CA'
-    Write-Host -ForegroundColor 'Blue' -Object 'https://docs.microsoft.com/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a'
+    Write-Host -ForegroundColor 'Blue' -Object 'https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a'
     Read-Host -Prompt 'InstallerLocale' -OutVariable _
     if ($_) { $_Installer['InstallerLocale'] = $_ | TrimString }
     # If user defined a default locale, add it
@@ -1749,7 +1749,7 @@ Function Read-LocaleMetadata {
     do {
       Write-Host -ForegroundColor 'Red' $script:_returnValue.ErrorString()
       Write-Host -ForegroundColor 'Green' -Object '[Required] Enter the Package Locale. For example: en-US, en-CA'
-      Write-Host -ForegroundColor 'Blue' 'Reference Link: https://docs.microsoft.com/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a'
+      Write-Host -ForegroundColor 'Blue' 'Reference Link: https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/6c085406-a698-4e12-9d4d-c3b0ee3dbc4a'
       $script:PackageLocale = Read-Host -Prompt 'PackageLocale' | TrimString
       if (Test-String $script:PackageLocale -MaxLength $Patterns.PackageLocaleMaxLength -MatchPattern $Patterns.PackageLocale -NotNull) {
         $script:_returnValue = [ReturnValue]::Success()

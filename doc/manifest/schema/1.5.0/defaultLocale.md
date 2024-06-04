@@ -1,11 +1,11 @@
 [JSON schema]:                                      https://github.com/microsoft/winget-cli/blob/master/schemas/JSON/manifests/v1.5.0/manifest.defaultLocale.1.5.0.json
 [YAML]:                                             https://yaml.org/spec/
 [semantic version]:                                 https://semver.org
-[Available languages for Windows]:                  https://docs.microsoft.com/windows-hardware/manufacture/desktop/available-language-packs-for-windows
-[locales]:                                          https://docs.microsoft.com/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs
-[install]:                                          https://docs.microsoft.com/windows/package-manager/winget/install
-[list]:                                             https://docs.microsoft.com/windows/package-manager/winget/list
-[upgrade]:                                          https://docs.microsoft.com/windows/package-manager/winget/upgrade
+[Available languages for Windows]:                  https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/available-language-packs-for-windows
+[locales]:                                          https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/default-input-locales-for-windows-language-packs
+[install]:                                          https://learn.microsoft.com/en-us/windows/package-manager/winget/install
+[list]:                                             https://learn.microsoft.com/en-us/windows/package-manager/winget/list
+[upgrade]:                                          https://learn.microsoft.com/en-us/windows/package-manager/winget/upgrade
 
 # Windows Package Manager
 ## Manifest Schema v1.5.0 Default Locale File
@@ -80,7 +80,7 @@ ManifestVersion: 1.5.0        # The manifest syntax version
   **References:**
 
 * [Available languages for Windows]
-* [Default Input Profiles (Input Locales) in Windows][locales]
+* [Default input profiles (input locales) in Windows][locales]
 
   > [!NOTE]
 	This field is the key to determining which fields are required for the Microsoft community repository. The default locale specified in the version file must match with this value.
