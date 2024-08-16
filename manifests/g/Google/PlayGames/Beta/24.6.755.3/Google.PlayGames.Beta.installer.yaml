@@ -1,22 +1,28 @@
-# Created using wingetcreate 1.6.1.0
+# Created using wingetcreate 1.6.4.0
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
 
 PackageIdentifier: Google.PlayGames.Beta
-PackageVersion: 24.6.755.3
+PackageVersion: 24.7.1042.5
 InstallerType: exe
 Scope: machine
 InstallModes:
-- silent
-- interactive
+  - interactive
+  - silent
 InstallerSwitches:
-  Silent: --silent
-  SilentWithProgress: --silent
+  Silent: --install="appguid={47B07D71-505D-4665-AFD4-4972A30C6530}&appname=Google%20Play%20Games&lang=en-US&needsadmin=true&ap=beta" --silent
+  SilentWithProgress: --install="appguid={47B07D71-505D-4665-AFD4-4972A30C6530}&appname=Google%20Play%20Games&lang=en-US&needsadmin=true&ap=beta" --silent
+#  Silent: /o{47B07D71-505D-4665-AFD4-4972A30C6530} /l1518 /noui
+#  SilentWithProgress: /o{47B07D71-505D-4665-AFD4-4972A30C6530} /l1518 /noui
 UpgradeBehavior: install
-ProductCode: GooglePlayGames
+#ProductCode: GooglePlaygames
+ReleaseDate: 2024-08-11
 ElevationRequirement: elevatesSelf
 Installers:
+#- Architecture: x64
+#  InstallerUrl: https://dl.google.com/release2/Play/nlmaiurtmqp6p73drq5w6l426e_24.7.1042.5/HPE-24.7.1042.5-CIP.exe
+#  InstallerSha256: 013b6ccb5323bdb95d8ee43a01e2d51c37515a3340692026ddf623a491344a58
 - Architecture: x64
-  InstallerUrl: https://dl.google.com/tag/s/appguid%3D%7B47B07D71-505D-4665-AFD4-4972A30C6530%7D%26appname%3DGoogle%2520Play%2520Games%26lang%3Den-US%26needsadmin%3Dtrue%26ap%3Dbeta/play/games/Install-GooglePlayGames-Beta.exe
-  InstallerSha256: FF163428AD47D2BF59536344E03DE89858BDF0E0EEADAAEFB3726E922528D158
+  InstallerUrl: https://dl.google.com/release2/update2/adlpizocxbt35e3gexcyo7pdle5q_129.0.6651.0/UpdaterSetup.exe
+  InstallerSha256: F4B2C035A8801A86EC3799350AF542AC033DEB45C15825214FAA70DF2815D66B
 ManifestType: installer
 ManifestVersion: 1.6.0
