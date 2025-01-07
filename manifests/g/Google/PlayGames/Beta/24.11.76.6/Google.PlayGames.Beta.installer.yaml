@@ -9,15 +9,28 @@ InstallModes:
 - interactive
 - silent
 InstallerSwitches:
-  Silent: --silent
-  SilentWithProgress: --silent
+  Silent: --install="appguid={47B07D71-505D-4665-AFD4-4972A30C6530}&appname=Google%20Play%20Games&lang=en-US&needsadmin=true&ap=beta" --silent
+  SilentWithProgress: --install="appguid={47B07D71-505D-4665-AFD4-4972A30C6530}&appname=Google%20Play%20Games&lang=en-US&needsadmin=true&ap=beta" --silent
+#  Silent: /o{47B07D71-505D-4665-AFD4-4972A30C6530} /l1518 /noui
+#  SilentWithProgress: /o{47B07D71-505D-4665-AFD4-4972A30C6530} /l1518 /noui
 UpgradeBehavior: install
 ProductCode: GooglePlayGames
 ReleaseDate: 2024-12-13
 ElevationRequirement: elevatesSelf
 Installers:
 - Architecture: x64
-  InstallerUrl: https://dl.google.com/tag/s/appguid=%7B47B07D71-505D-4665-AFD4-4972A30C6530%7D&appname=GPG&needsadmin=true&ap=beta/play/games/Install-GooglePlayGames-Beta.exe
-  InstallerSha256: 4D52E64550DBE3FEDBA06663AF91017E6EB59D181B3CA98191C1E977AB3BFDCA
+  InstallerUrl: https://dl.google.com/release2/update2/c5y24i2cqrpyqrktfst2oicxem_132.0.6833.0/UpdaterSetup.exe
+  InstallerSha256: BB15A5DF334BF8FE9483E02B062CB07D760E0D59409C2CA5600C9D96203901FC
+#
+#  InstallerUrl: https://dl.google.com/tag/s/appguid=%7B47B07D71-505D-4665-AFD4-4972A30C6530%7D&appname=GPG&needsadmin=true&ap=beta/play/games/Install-GooglePlayGames-Beta.exe
+#  InstallerSha256: 4D52E64550DBE3FEDBA06663AF91017E6EB59D181B3CA98191C1E977AB3BFDCA
+#
+#  InstallerUrl: https://dl.google.com/release2/Play/adhx4se24swhnowhzn2zh745ytea_24.11.76.6/HPE-24.11.76.6-CIP.exe
+#  InstallerSha256: 013b6ccb5323bdb95d8ee43a01e2d51c37515a3340692026ddf623a491344a58
+# 47B07D71-505D-4665-AFD4-4972A30C6530
+#
+#  InstallerUrl: https://dl.google.com/release2/Play/adl5rvr7ysxz7n2t55mhbnkpouvq_24.12.129.0/GooglePlayGamesServicesInstaller.exe
+#  InstallerSha256: CF7AEB3CFD69098C029A16FBD0F2CDE333BCDEB3DD71E4330C18654231B22211
+# 5B9D6427-8AB1-42D0-9F13-4EE089071B8E
 ManifestType: installer
 ManifestVersion: 1.9.0
